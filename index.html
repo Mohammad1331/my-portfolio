@@ -1,0 +1,233 @@
+# نسخه کامل انگلیسی با اطلاعات شخصی Mohammad و بدون حذف هیچ بخشی
+full_html = """
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Welcome - Mohammad | Crazy About Coding</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        body { font-family: 'Inter', sans-serif; }
+        .gradient-bg { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); }
+        .card-hover { transition: all 0.3s ease; }
+        .card-hover:hover { transform: translateY(-5px); box-shadow: 0 20px 40px rgba(0,0,0,0.1); }
+        .skill-badge { transition: all 0.3s ease; }
+        .skill-badge:hover { transform: scale(1.05); box-shadow: 0 8px 25px rgba(0,0,0,0.15); }
+        .fade-in { animation: fadeIn 0.8s ease-in; }
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+        .typing-animation { border-right: 2px solid #667eea; animation: blink 1s infinite; }
+        @keyframes blink { 0%, 50% { border-color: #667eea; } 51%, 100% { border-color: transparent; } }
+    </style>
+</head>
+<body class="bg-gray-50 min-h-screen">
+    <!-- Hero Section -->
+    <section class="gradient-bg text-white py-20 px-4">
+        <div class="max-w-4xl mx-auto text-center fade-in">
+            <div class="mb-8">
+                <div class="w-32 h-32 mx-auto mb-6 bg-white rounded-full flex items-center justify-center shadow-lg">
+                    <span class="text-4xl">👋</span>
+                </div>
+                <h1 class="text-5xl font-bold mb-4">Hi, I'm Mohammad</h1>
+                <p class="text-xl opacity-90 typing-animation inline-block" id="typing-text">Crazy about coding</p>
+            </div>
+            <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-8 max-w-2xl mx-auto">
+                <p class="text-lg leading-relaxed">
+                    Welcome! I'm a passionate programmer who loves turning ideas into reality. 
+                    Whether you need a sleek web application, robust backend system, or creative solution, 
+                    I'm here to make the process smooth and enjoyable for you.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="py-16 px-4">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">What I Can Help You With</h2>
+                <p class="text-gray-600 text-lg">I specialize in these technologies to bring your vision to life</p>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="skill-badge bg-white rounded-xl p-6 text-center shadow-lg border border-gray-100">
+                    <div class="w-16 h-16 mx-auto mb-4 bg-blue-100 rounded-full flex items-center justify-center">
+                        <span class="text-2xl">⚛️</span>
+                    </div>
+                    <h3 class="font-semibold text-gray-800 mb-2">React</h3>
+                    <p class="text-gray-600 text-sm">Modern, interactive user interfaces that users love</p>
+                </div>
+                <div class="skill-badge bg-white rounded-xl p-6 text-center shadow-lg border border-gray-100">
+                    <div class="w-16 h-16 mx-auto mb-4 bg-red-100 rounded-full flex items-center justify-center">
+                        <span class="text-2xl">☕</span>
+                    </div>
+                    <h3 class="font-semibold text-gray-800 mb-2">Java</h3>
+                    <p class="text-gray-600 text-sm">Reliable, scalable backend systems and applications</p>
+                </div>
+                <div class="skill-badge bg-white rounded-xl p-6 text-center shadow-lg border border-gray-100">
+                    <div class="w-16 h-16 mx-auto mb-4 bg-green-100 rounded-full flex items-center justify-center">
+                        <span class="text-2xl">🐍</span>
+                    </div>
+                    <h3 class="font-semibold text-gray-800 mb-2">Python</h3>
+                    <p class="text-gray-600 text-sm">Data processing, automation, and smart solutions</p>
+                </div>
+                <div class="skill-badge bg-white rounded-xl p-6 text-center shadow-lg border border-gray-100">
+                    <div class="w-16 h-16 mx-auto mb-4 bg-yellow-100 rounded-full flex items-center justify-center">
+                        <span class="text-2xl">📋</span>
+                    </div>
+                    <h3 class="font-semibold text-gray-800 mb-2">JSON</h3>
+                    <p class="text-gray-600 text-sm">Clean data structures and API integrations</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Approach Section -->
+    <section class="bg-white py-16 px-4">
+        <div class="max-w-4xl mx-auto">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">My Approach</h2>
+                <p class="text-gray-600 text-lg">How I make sure you feel confident throughout our journey</p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="card-hover text-center p-6">
+                    <div class="w-20 h-20 mx-auto mb-6 bg-blue-50 rounded-full flex items-center justify-center">
+                        <span class="text-3xl">👂</span>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">Listen First</h3>
+                    <p class="text-gray-600">I take time to understand your needs, goals, and concerns before writing a single line of code.</p>
+                </div>
+                <div class="card-hover text-center p-6">
+                    <div class="w-20 h-20 mx-auto mb-6 bg-green-50 rounded-full flex items-center justify-center">
+                        <span class="text-3xl">💬</span>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">Clear Communication</h3>
+                    <p class="text-gray-600">No technical jargon. I explain everything in simple terms and keep you updated every step of the way.</p>
+                </div>
+                <div class="card-hover text-center p-6">
+                    <div class="w-20 h-20 mx-auto mb-6 bg-purple-50 rounded-full flex items-center justify-center">
+                        <span class="text-3xl">🎯</span>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">Results That Matter</h3>
+                    <p class="text-gray-600">I focus on delivering solutions that actually solve your problems and exceed your expectations.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="bg-gray-100 py-16 px-4">
+        <div class="max-w-3xl mx-auto text-center">
+            <h2 class="text-3xl font-bold text-gray-800 mb-6">Ready to Start Your Project?</h2>
+            <p class="text-gray-600 text-lg mb-8">
+                I'd love to hear about your ideas and discuss how we can bring them to life.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <button onclick="showContactInfo()" class="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-lg font-semibold transition-colors duration-300 shadow-lg">
+                    Let's Chat About Your Project
+                </button>
+                <button onclick="showPortfolio()" class="bg-white hover:bg-gray-50 text-gray-800 px-8 py-3 rounded-lg font-semibold border border-gray-300 transition-colors duration-300">
+                    See My Work
+                </button>
+            </div>
+            <div id="contact-info" class="hidden mt-8 p-6 bg-white rounded-xl shadow-lg">
+                <h3 class="text-xl font-semibold text-gray-800 mb-4">Get In Touch</h3>
+                <p class="text-gray-600 mb-4">I typically respond within a few hours during business days.</p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                    <div class="flex items-center gap-2">
+                        <span class="text-blue-600">📧</span>
+                        <span class="text-gray-700">movimoad924@gmail.com</span>
+                    </div>
+                </div>
+            </div>
+            <div id="portfolio-info" class="hidden mt-8 p-6 bg-white rounded-xl shadow-lg">
+                <h3 class="text-xl font-semibold text-gray-800 mb-4">Recent Projects</h3>
+                <div class="grid sm:grid-cols-2 gap-4">
+                    <div class="p-4 bg-gray-50 rounded-lg">
+                        <h4 class="font-semibold text-gray-800 mb-2">E-commerce Platform</h4>
+                        <p class="text-gray-600 text-sm">React + Java backend with secure payment processing</p>
+                    </div>
+                    <div class="p-4 bg-gray-50 rounded-lg">
+                        <h4 class="font-semibold text-gray-800 mb-2">Data Analytics Dashboard</h4>
+                        <p class="text-gray-600 text-sm">Python-powered insights with interactive visualizations</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8 px-4">
+        <div class="max-w-4xl mx-auto text-center">
+            <p class="text-gray-300 mb-4">
+                "Great software is built on trust, communication, and attention to detail."
+            </p>
+            <p class="text-gray-400 text-sm">
+                Looking forward to working with you! 🚀
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        const texts = [
+            "Crazy about coding",
+            "Your ideas deserve great execution",
+            "Quality code, friendly service",
+            "Let's build your vision"
+        ];
+        let textIndex = 0, charIndex = 0, isDeleting = false;
+        function typeText() {
+            const currentText = texts[textIndex];
+            const typingElement = document.getElementById('typing-text');
+            if (isDeleting) {
+                typingElement.textContent = currentText.substring(0, charIndex - 1);
+                charIndex--;
+            } else {
+                typingElement.textContent = currentText.substring(0, charIndex + 1);
+                charIndex++;
+            }
+            if (!isDeleting && charIndex === currentText.length) {
+                setTimeout(() => isDeleting = true, 2000);
+            } else if (isDeleting && charIndex === 0) {
+                isDeleting = false;
+                textIndex = (textIndex + 1) % texts.length;
+            }
+            const speed = isDeleting ? 50 : 100;
+            setTimeout(typeText, speed);
+        }
+        setTimeout(typeText, 1000);
+        function showContactInfo() {
+            document.getElementById('portfolio-info').classList.add('hidden');
+            document.getElementById('contact-info').classList.toggle('hidden');
+        }
+        function showPortfolio() {
+            document.getElementById('contact-info').classList.add('hidden');
+            document.getElementById('portfolio-info').classList.toggle('hidden');
+        }
+        const observerOptions = { threshold: 0.1, rootMargin: '0px 0px -50px 0px' };
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+        document.addEventListener('DOMContentLoaded', () => {
+            const skillCards = document.querySelectorAll('.skill-badge');
+            skillCards.forEach((card, index) => {
+                card.style.opacity = '0';
+                card.style.transform = 'translateY(20px)';
+                card.style.transition = `opacity 0.6s ease ${index * 0.1}s, transform 0.6s ease ${index * 0.1}s`;
+                observer.observe(card);
+            });
+        });
+    </script>
+</body>
+</html>
+"""
+
+# ذخیره فایل نهایی
+final_path = Path("/mnt/data/mohammad_portfolio_full.html")
+final_path.write_text(full_html, encoding="utf-8")
+final_path.name
